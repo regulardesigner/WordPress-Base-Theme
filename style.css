@@ -1,0 +1,41 @@
+/*
+	Theme Name: Base Theme
+	Theme URI: http://www.example.com
+	Description: A clean and minimal theme that is completely compatible with WordPress 3.0
+	Author: Valentin
+	Author URI: http://www.valentinprugnaud.fr
+	Version: 1.0
+
+	1. Bootstrap
+	2. Desktop
+	3. Large Desktop
+	4. Tablets
+	5. Mobiles
+	6. Internet Explorer fix
+*/
+
+/**
+ * 1. Bootstrap
+ **/
+ @import url('css/bootstrap.min.css');
+ /*@import url('css/bootstrap-responsive.min.css');*/
+
+ /**
+ * 2. Desktop
+ **/
+
+ /**
+ * 3. Large Desktop
+ **/
+
+ /**
+ * 4. Tablet
+ **/
+
+ /**
+ * 5. Mobile
+ **/
+
+ /**
+ * 6. IE
+ **/
