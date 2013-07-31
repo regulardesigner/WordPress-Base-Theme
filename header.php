@@ -20,7 +20,7 @@
         <!-- Bootstrap -->
         <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
         <!-- Main CSS -->
-        <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> 
         <?php
             /* 
              *  Add this to support sites with sites with threaded comments enabled.
@@ -30,31 +30,47 @@
             wp_head();
             wp_get_archives('type=monthly&format=link');
         ?>
+        <!-- Custom javascripts -->
+        <script src="<?php bloginfo('template_url');?>/js/scripts.js" type="text/javascript"></script>
     </head>
-<body>
+<body <?php body_class($class); ?>>
  
-<div id="wrapper" class="container">
-    <header class="container">
-        <h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <nav class="navbar">
-        <?php 
-            $args = array(
-                'theme_location'  => 'main-menu',
-                'container'       => 'div',
-                'container_class' => 'navbar-inner',
-                'menu_class'      => 'nav navbar-nav',
-                'menu_id'         => '',
-                'echo'            => true,
-                'before'          => '',
-                'after'           => '',
-                'link_before'     => '',
-                'link_after'      => '',
-                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                'depth'           => 0,
-                'walker'          => ''
-            );
+<div id="wrapper">
+    <header>
+        <div class="container">
+            <h1 class="span5"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1>
+            <nav class="navbar">
+            <?php 
+                $args = array(
+                    'theme_location'  => 'main-menu',
+                    'container'       => 'div',
+                    'container_class' => 'navbar-inner',
+                    'menu_class'      => 'nav navbar-nav',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => ''
+                );
 
-            wp_nav_menu( $args );
-        ?>
-    </nav>
+                wp_nav_menu( $args );
+            ?>
+            </nav>
+        </div>
     </header><!-- End header -->
+    <div id="slider" class="carousel slide" data-interval="800">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="active item"><img src="<?php bloginfo('template_url'); ?>/img/slider.jpg" alt="" title="" /></div>
+            <div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slider.jpg" alt="" title="" /></div>
+            <div class="item"><img src="<?php bloginfo('template_url'); ?>/img/slider.jpg" alt="" title="" /></div>
+        </div>
+    </div>

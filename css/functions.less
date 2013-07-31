@@ -1,0 +1,18 @@
+// 1. Colors
+ @ultralightgrey: #EFEFEF;
+ @darkgrey:#222222;
+ @midgrey: #666666;
+ @skyblue: #62c1ed;
+ @lakeblue: #0072a7;
+
+ // Mixins
+.border(@size: 1px, @color: red){
+	border: @size solid @color;
+}
+.box-shadow(@horizontal: 0px, @vertical: 1px, @blur: 5px, @spread: 1px, @color: black){
+	-webkit-box-shadow: @horizontal @vertical @blur @spread @color;
+	box-shadow: @horizontal @vertical @blur @spread @color;
+}
+.font-camelia{
+	font-family: 'RNS Camelia', sans-serif;
+}
