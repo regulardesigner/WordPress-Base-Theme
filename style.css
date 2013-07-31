@@ -15,33 +15,27 @@
 */
 
 /**
- * 0. Fonts
- **/
-@import url('css/fonts.css');
-/**
  * 1. Bootstrap
  **/
  @import url('css/bootstrap.min.css');
- @import url('css/bootstrap-responsive.min.css');
+ /*@import url('css/bootstrap-responsive.min.css');*/
 
-/**
+ /**
  * 2. Desktop
  **/
- @import url('css/desktop.css');
- 
- /**
-  * 3. Large Desktop
-  **/
- 
 
  /**
-  * 4. Tablet
-  **/
+ * 3. Large Desktop
+ **/
 
  /**
-  * 5. Mobile
-  **/
+ * 4. Tablet
+ **/
 
  /**
-  * 6. IE
-  **/
+ * 5. Mobile
+ **/
+
+ /**
+ * 6. IE
+ **/
