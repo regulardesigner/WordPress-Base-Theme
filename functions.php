@@ -20,3 +20,11 @@ if( file_exists(get_template_directory().'/inc/theme-config.php') )
  **/
 if( file_exists(get_template_directory().'/inc/theme-plugins.php') )
     include_once(get_template_directory().'/inc/theme-plugins.php');
+
+/**
+ * Custom Post Type
+ * 
+ * Info : http://codex.wordpress.org/Post_Types
+ **/
+if( file_exists(get_template_directory().'/inc/custom-post-types/custom-post-types.php') )
+    include_once(get_template_directory().'/inc/custom-post-types/custom-post-types.php');
